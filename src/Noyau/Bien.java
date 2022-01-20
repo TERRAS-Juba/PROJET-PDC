@@ -19,6 +19,50 @@ public abstract class Bien implements Comparable, Serializable {
     public abstract double calculPrixEchange();
     public abstract double calculPrixLocation();
 
+    public void setAdresse(String adresse) {
+        this.adresse = adresse;
+    }
+
+    public void setProprietaire(Proprietaire proprietaire) {
+        this.proprietaire = proprietaire;
+    }
+
+    public void setWilayaEchange(Wilaya wilayaEchange) {
+        this.wilayaEchange = wilayaEchange;
+    }
+
+    public void setWilayaLocalisation(Wilaya wilayaLocalisation) {
+        this.wilayaLocalisation = wilayaLocalisation;
+    }
+
+    public void setDateAjout(Date dateAjout) {
+        this.dateAjout = dateAjout;
+    }
+
+    public void setSuperficie(double superficie) {
+        this.superficie = superficie;
+    }
+
+    public void setPrix(double prix) {
+        this.prix = prix;
+    }
+
+    public void setPrixNegociable(boolean prixNegociable) {
+        this.prixNegociable = prixNegociable;
+    }
+
+    public void setDescriptif(String descriptif) {
+        this.descriptif = descriptif;
+    }
+
+    public void setImages(String[] images) {
+        Images = images;
+    }
+
+    public void setTransaction(Transaction transaction) {
+        this.transaction = transaction;
+    }
+
     public Bien(String adresse, Proprietaire proprietaire, Wilaya wilayaEchange, Wilaya wilayaLocalisation, Date dateAjout, double superficie, double prix, boolean prixNegociable, String descriptif, String[] images, Transaction transaction) {
         this.adresse = adresse;
         this.proprietaire = proprietaire;

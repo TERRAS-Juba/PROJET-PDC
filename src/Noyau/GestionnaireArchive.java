@@ -15,4 +15,8 @@ public class GestionnaireArchive {
     public void supprimerArchive(String key){
         this.archives.remove(key);
     }
+
+    public Map getArchives() {
+        return archives;
+    }
 }
