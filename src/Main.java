@@ -79,7 +79,5 @@ public class Main {
         bienProprietaire= proxy.rechercherBiensProprietaire(proprietaire1.getEmail());
         fin=System.nanoTime();
         System.out.println("Le Temps d'execution avec Proxy :"+(fin-debut));
-
-
     }
 }
